@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de contact</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="shortcut icon" href="./Assets/favicon.ico" type="image/x-icon">
+    <script src="./formulaire.js" defer></script> 
+</head>
+<body>
+    <header>
+        <h1> Formulaire de contact </h1>
+    </header>
+
+    <main>
+        <form action="#" method="get" enctypes="multipart/form-data"> 
+
+        <fieldset class="section">
+            <legend class="bold">Informations personelles</legend>
+            <label for="Nom">Nom :</label><input type="text" name="Nom" id="Nom" min="2" required>
+            <label for="Prenom">Prénom :</label><input type="text" name="Prenom" id="Prenom">
+            <br>
+            <label for="mail">Email :</label><input type="email" name="mail" placeholder="exemple@exemple.com" required>
+            <br>
+            <label for="telephone">Téléphone :</label><input type="tel" name="telephone" id="telephone" placeholder="+33">
+            <br>
+            <label for="reseau">Réseau social :</label>
+            <select name="reseau" id="reseau" size="1">
+            <option value="1">Facebook</option>
+            <option value="2">Instagram</option>
+            <option value="3">X&#40Twiter&#41</option>
+            <option value="4">Telegram</option> </select>
+            <label for="lienReseau">Lien :</label><input type="url" name="url" id="url" placeholder="https://example.com" pattern="https://.*" size="30">
+
+            <fieldset>
+            <legend class="bold">Adresse</legend>
+            <label for="num">N° :</label><input type="text" name="num" id="num">
+            <label for="voie">Voie :</label><input type="text" name="voie" id="voie"> <br>
+            <label for="CP">Code Postal :</label><input type="text" name="CP">
+            <label for="Ville">Ville :</label><input type="text" name="ville" id="ville">
+            </fieldset>
+            
+        </fieldset>
+
+        <fieldset>
+            <legend class="bold">Message</legend>
+            <textarea id="message" name="message" required rows="10" cols="60" placeholder="Écrire votre message ici..."></textarea>
+        </fieldset>
+
+        <div>
+            <input type="submit" name="submit" id="submit" value="Envoyer">
+            <input type="reset" name="reset" id="reset" value="Annuler">
+            <a href="station_meteo.html">Retour à la station météo</a>
+        </div>
+
+        </form>
+    </main>
+
+</body>

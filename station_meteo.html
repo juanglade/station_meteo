@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Station météo</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="shortcut icon" href="./Assets/favicon.ico" type="image/x-icon">
+    <script src="./meteo_ja.js" defer></script> 
+</head>
+<body>
+    <header class="header">
+        <img src="./Assets/soleil-transformed.png" alt=soleil width=20%>
+        <h1 class="h1" > Ma station météo </h1>
+    </header>
+
+    <main>
+        <div class="centered">
+            <section id="sec1">
+                <h2> Météo de Toulouse</h2>
+                <div class="bold"><span id="jourSemaine"></span> <span id="date"></span></div>
+                <br> 
+                <div>Il est <span id="heure"></span></div>
+                <br> 
+                <div>Le soleil se lève à <span id="sunrise"></span>.</div>
+                <div>Le soleil se couche à <span id="sunset"></span>.</div>
+                <br> 
+                <div>Aujourd'hui nous fêtons les <span class="underline" id="saintMaj"></span>.</div>
+                <div class="italic"><span id="resumeSaint"></span>.</div>
+                <br> 
+            </section>
+
+            <table>
+                <tr>
+                    <td class="bold">Aujourd'hui <br><span id="jour0Semaine"></span><br><br><span id="tempJour"></span>°C</td>
+                    <td>
+                        <figure id="j">
+                            <img src="" alt="météo du jour">
+                            <figcaption><span><span id="conditionsJour"></span></span></figcaption>
+                        </figure>
+                    </td>
+                    <td >Tmin: <span id="TminJour"></span>°C <br><br> Tmax: <span id="TmaxJour"></span>°C</td>
+                </tr>
+                <tr>
+                    <td>Demain <br><span id="jour1Semaine"></span><br><br><span id="TmoyJour1"></span>°C</td>
+                    <td><figure id="j1">
+                        <img src="" alt="météo du jour1">
+                        <figcaption><span><span id="conditionsJour1"></span></span></figcaption>
+                    </figure>
+                </td>
+                <td >Tmin: <span id="TminJour1"></span>°C <br><br> Tmax: <span id="TmaxJour1"></span>°C</td>
+                </tr>
+                <tr>
+                    <td>Après-demain <br><span id="jour2Semaine"></span><br><br><span id="TmoyJour2"></span>°C</td>
+                    <td><figure id="j2">
+                        <img src="" alt="météo du jour2">
+                        <figcaption><span><span id="conditionsJour2"></span></span></figcaption>
+                    </figure>
+                </td>
+                <td >Tmin: <span id="TminJour2"></span>°C <br><br> Tmax: <span id="TmaxJour2"></span>°C</td>
+                </tr>
+            </table>
+        </div>
+    </main>
+
+    <br>
+
+    <footer>
+        <div class="center">
+            <a href="#sec1">Ma météo de Toulouse</a>
+            <a href="https://www.lachainemeteo.com/meteo-plage/previsions-meteo-plage">Météo des plages</a>
+            <a href="formulaire_contact.html">Formulaire de contact</a>
+        </div>
+        <br>
+        <div class="bold">©Julien Anglade (2024)</div>
+        <div><a href="https://www.linkedin.com/in/julienanglade/">Mon LinkedIn</a></div>
+    </footer>
+    
+</body>
+</html>
